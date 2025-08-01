@@ -44,7 +44,7 @@
 
       <button class="post-card__action">
         <span class="post-card__action-icon">📤</span>
-        <span class="post-card__action-text">Share</span>
+        <span class="post-card__action-text">Поделиться</span>
       </button>
     </footer>
   </article>
