@@ -1,0 +1,71 @@
+// БЭМ миксины и утилиты
+
+// Миксин для создания элемента
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+// Миксин для создания модификатора блока
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Миксин для создания модификатора элемента
+@mixin element-modifier($element, $modifier) {
+  &__#{$element}--#{$modifier} {
+    @content;
+  }
+}
+
+$color-primary: #1877f2;
+$color-primary-hover: #166fe5;
+$color-text-primary: #1a1a1a;
+$color-text-secondary: #65676b;
+$color-background: #f0f2f5;
+$color-border: #e4e6eb;
+$color-error: #d32f2f;
+$color-white: #ffffff;
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+
+$border-radius-sm: 6px;
+$border-radius-md: 12px;
+$border-radius-full: 50%;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1280px;
+
+// Миксины для медиа-запросов
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
