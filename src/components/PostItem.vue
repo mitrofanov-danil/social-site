@@ -87,7 +87,8 @@ const openImage = (imageUrl: string) => {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/bem-utils";
+@use "@/assets/styles/bem-utils" as *;
+
 .post-card {
   background: $color-white;
   border-radius: $border-radius-md;

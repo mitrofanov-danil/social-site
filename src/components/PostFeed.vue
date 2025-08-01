@@ -77,7 +77,8 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/bem-utils";
+@use "@/assets/styles/bem-utils" as *;
+
 .feed {
   height: 100vh;
   overflow-y: auto;

@@ -30,7 +30,7 @@ const refreshFeed = () => {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/bem-utils";
+@use "@/assets/styles/bem-utils" as *;
 
 .page-header {
   background: white;
