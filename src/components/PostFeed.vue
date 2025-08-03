@@ -25,7 +25,7 @@
         <button @click="retry" class="feed__retry-button">Попробуйте еще раз</button>
       </div>
 
-      <div ref="trigger"></div>
+      <div class="feed__trigger" ref="trigger"></div>
     </div>
   </div>
 </template>
@@ -158,6 +158,11 @@ onUnmounted(() => {
     &:hover {
       background-color: $color-primary-hover;
     }
+  }
+
+  @include element(trigger) {
+    height: 10px;
+    width: 100%;
   }
 
   @include mobile {
